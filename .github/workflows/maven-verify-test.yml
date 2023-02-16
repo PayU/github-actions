@@ -20,5 +20,12 @@ on:
 jobs:
 
   # verify by maven
-  verify:
+  verify1:
     uses: ./.github/workflows/maven-verify.yml
+
+  # test with specific os and jdk
+  verify2:
+    uses: ./.github/workflows/maven-verify.yml
+    with:
+      os-matrix: '[ "ubuntu-latest" ]'
+      jdk-matrix: '[ "11" ]'
