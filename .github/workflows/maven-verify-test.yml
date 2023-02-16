@@ -21,4 +21,4 @@ jobs:
 
   # verify by maven
   verify:
-    uses: PayU/github-actions/.github/workflows/maven-verify.yml@v1
+    uses: ./.github/workflows/maven-verify.yml
